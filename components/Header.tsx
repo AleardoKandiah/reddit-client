@@ -2,8 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Icon from '../public/Icon.png'
 import { BeakerIcon, ChevronDownIcon, HomeIcon, SearchIcon } from '@heroicons/react/solid'
-import { StarIcon } from '@heroicons/react/outline'
-
+import { BellIcon, ChatIcon, GlobeIcon, PlusIcon, SparklesIcon, SpeakerphoneIcon, VideoCameraIcon} from '@heroicons/react/outline'
 
 
 function Header() {
@@ -23,7 +22,7 @@ function Header() {
             <p className='flex-1 ml-2 lg:inline'>Home</p>
             <ChevronDownIcon className='h-5 w-5'/>
         </div>
-
+    
     {/* Search */}
     <form className='flex flex-1 items-center space-x-2 border
          border-gray-200 rounded-sm bg-gray-100 px-3 py-1'>
@@ -31,6 +30,17 @@ function Header() {
         <input className='flex-1 bg-transparent outline-none' type='text' placeholder='Search Reddit'/>
         <button type='submit' hidden />
     </form>
+    
+    <div className='flex'>
+        <SparklesIcon className='icon'/>
+        <GlobeIcon className='icon'/>
+        <VideoCameraIcon className='icon'/>
+        <hr className='h-10 border border-gray-100'/>
+        <ChatIcon className='icon'/> 
+        <BellIcon className ='icon'/>
+        <PlusIcon className='icon'/>
+        <SpeakerphoneIcon className ='icon'/> 
+    </div>
 
     </div>
   )

@@ -7,7 +7,7 @@ import { StarIcon } from '@heroicons/react/outline'
 function Header() {
   return (
 
-    <div className='flex'>
+    <div className='sticky top-0 z-50 flex bg-white px-4 py-2 shadow-sm'>
         <div className=' relative h-10 w-20 flex-shrink-0 
         cursor-pointer overflow:hidden'>
             <Image 
@@ -16,9 +16,9 @@ function Header() {
             layout="fill"
             />
         </div>
-            <div className='mx-7 flex items-center'>
+            <div className='mx-7 flex items-center xl:min-w-[300px]'>
             <HomeIcon className='h-5 w-5'/>
-            <p>Home</p>
+            <p className='flex-1 ml-2 lg:inline'>Home</p>
             <ChevronDownIcon className='h-5 w-5'/>
             </div>
     </div>

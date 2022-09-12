@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Icon from '../public/Icon.png'
-import { BeakerIcon, ChevronDownIcon, HomeIcon, SearchIcon } from '@heroicons/react/solid'
-import { BellIcon, ChatIcon, GlobeIcon, PlusIcon, SparklesIcon, SpeakerphoneIcon, VideoCameraIcon} from '@heroicons/react/outline'
+import login from '../public/Login.png'
+import { BeakerIcon, ChevronDownIcon, HomeIcon, MenuIcon, SearchIcon, } from '@heroicons/react/solid'
+import { BellIcon, ChatIcon, GlobeIcon, PlusIcon, SparklesIcon, SpeakerphoneIcon, VideoCameraIcon, UserIcon} from '@heroicons/react/outline'
 
 
 function Header() {
@@ -31,7 +32,8 @@ function Header() {
         <button type='submit' hidden />
     </form>
     
-    <div className='flex'>
+    <div className='space-x-2
+         items-center  text-gray-500  mx-5 lg:inline-flex hidden'>
         <SparklesIcon className='icon'/>
         <GlobeIcon className='icon'/>
         <VideoCameraIcon className='icon'/>
@@ -40,6 +42,26 @@ function Header() {
         <BellIcon className ='icon'/>
         <PlusIcon className='icon'/>
         <SpeakerphoneIcon className ='icon'/> 
+    </div>
+
+    <div className='ml-5 flex items-center lg:hidden'>
+        <MenuIcon className='icon'/>
+    </div>
+
+    {/* Sign In/out */}
+
+    <div className='hidden lg:flex items-center space-x-2 
+         border-gray-100 p-2 cursor-pointer'>
+        <div className='relative h-5 w-5 flex-shrink-0'>
+        <Image 
+            objectFit='contain'
+            src= {login}
+            layout="fill"
+            alt=''
+            />            
+        </div>
+
+        <p className='text-gray-800'>Sign In</p>
     </div>
 
     </div>

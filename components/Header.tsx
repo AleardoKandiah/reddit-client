@@ -6,19 +6,21 @@ import { StarIcon } from '@heroicons/react/outline'
 
 function Header() {
   return (
-    <div className='display-inline relative h-10 w-20 flex-shrink-0 
-    cursor-pointer overflow:hidden'>
-        <Image 
-        objectFit='contain'
-        src= {Icon}
-        layout="fill"
-        />
 
-        <div className=' flex items-center'>
-        <HomeIcon className='h-5 w-5'/>
-        <p>Home</p>
-        <ChevronDownIcon className='h-5 w-5'/>
+    <div className='flex'>
+        <div className=' relative h-10 w-20 flex-shrink-0 
+        cursor-pointer overflow:hidden'>
+            <Image 
+            objectFit='contain'
+            src= {Icon}
+            layout="fill"
+            />
         </div>
+            <div className='mx-7 flex items-center'>
+            <HomeIcon className='h-5 w-5'/>
+            <p>Home</p>
+            <ChevronDownIcon className='h-5 w-5'/>
+            </div>
     </div>
   )
 }

@@ -4,9 +4,11 @@ import Icon from '../public/Icon.png'
 import login from '../public/Login.png'
 import { BeakerIcon, ChevronDownIcon, HomeIcon, MenuIcon, SearchIcon, } from '@heroicons/react/solid'
 import { BellIcon, ChatIcon, GlobeIcon, PlusIcon, SparklesIcon, SpeakerphoneIcon, VideoCameraIcon, UserIcon} from '@heroicons/react/outline'
+import { signIn, signOut, useSession } from 'next-auth/react'
 
 
 function Header() {
+    const {data: session } = useSession();
   return (
 
     <div className='sticky top-0 z-50 flex bg-white px-4 py-2 shadow-sm'>
@@ -49,9 +51,11 @@ function Header() {
     </div>
 
     {/* Sign In/out */}
-
-    <div className='hidden lg:flex items-center space-x-2 
-         border-gray-100 p-2 cursor-pointer'>
+    {/* implement ternary operator for session */}
+    {session ? (
+    <div 
+    onClick={() => signOut()} 
+    className='hidden lg:flex items-center space-x-2  border-gray-100 p-2 cursor-pointer'>
         <div className='relative h-5 w-5 flex-shrink-0'>
         <Image 
             objectFit='contain'
@@ -61,8 +65,27 @@ function Header() {
             />            
         </div>
 
-        <p className='text-gray-800'>Sign In</p>
+        <p className='text-gray-800'>Sign Out</p>
     </div>
+
+    ):(
+        <div 
+        onClick={() => signIn()} 
+        className='hidden lg:flex items-center space-x-2  border-gray-100 p-2 cursor-pointer'>
+            <div className='relative h-5 w-5 flex-shrink-0'>
+            <Image 
+                objectFit='contain'
+                src= {login}
+                layout="fill"
+                alt=''
+                />            
+            </div>
+    
+            <p className='text-gray-800'>Sign In</p>
+        </div>
+    
+    )}
+
 
     </div>
   )

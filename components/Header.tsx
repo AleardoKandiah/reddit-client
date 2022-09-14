@@ -50,7 +50,7 @@ function Header() {
         <MenuIcon className='icon'/>
     </div>
 
-    {/* Sign In/out */}
+    {/* Sign In/out*/}
     {/* implement ternary operator for session */}
     {session ? (
     <div 

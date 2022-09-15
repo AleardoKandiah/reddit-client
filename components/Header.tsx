@@ -68,6 +68,8 @@ function Header() {
             <p className='truncate'>{session?.user?.name}</p>
          <p className='text-gray-800'>1 Karma</p>
         </div>
+
+        <ChevronDownIcon className='h-5 flex-shrink-0 text-gray-400'/>
     </div>
 
     ):(

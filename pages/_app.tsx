@@ -4,7 +4,7 @@ import { SessionProvider } from 'next-auth/react'
 import Header from '../components/Header'
 
 // wrap whole app with session poviders to utlise hooks
-// Higher order component pattern
+// Higher order component patter
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return( 
   <SessionProvider session={session}>

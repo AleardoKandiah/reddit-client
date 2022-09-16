@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from 'next-auth/react'
 import Header from '../components/Header'
-import { ppoloProvider } from '@apolo.client'
+import { ppoloProvider } from '@apollo.client'
 import client from '../apollo-client'
 
 // wrap whole app with session poviders to utlise hooks

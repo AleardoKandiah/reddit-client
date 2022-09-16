@@ -7,7 +7,7 @@ import Header from '../components/Header'
 // Higher order component pattern
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return( 
-    <ApolloProvider>
+    <ApolloProvider client={}>
       <SessionProvider session={session}>
         <div className="h-screen overflow-y-scroll bg-slate-200">
         < Header />

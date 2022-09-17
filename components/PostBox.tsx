@@ -9,6 +9,8 @@ function PostBox() {
         <div>
            {/* Avatar */}
 
+            <input type='text' placeholder='Create a post by entering a title'/>
+
         </div>
     </div>
   )

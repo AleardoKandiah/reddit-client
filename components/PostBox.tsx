@@ -5,9 +5,11 @@ function PostBox() {
     const { data: session} = useSession()
 
   return (
-    <div >
+    <div>
+        <div>
+           {/* Avatar */}
 
-
+        </div>
     </div>
   )
 }

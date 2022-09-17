@@ -5,14 +5,20 @@ function PostBox() {
     const { data: session} = useSession()
 
   return (
-    <div>
+    <form>
         <div>
            {/* Avatar */}
 
-            <input type='text' placeholder='Create a post by entering a title'/>
+            <input
+            disabled={!session}
+            className='bg-gray-50 p-2 pl-5 outline-none'
+            type='text' placeholder={
+                session ? 'Create a post by entering a title': 'Sign in to post'
+            
+            }/>
 
         </div>
-    </div>
+    </form>
   )
 }
 

@@ -6,6 +6,7 @@ import { BeakerIcon, ChevronDownIcon, HomeIcon, MenuIcon, SearchIcon, } from '@h
 import { BellIcon, ChatIcon, GlobeIcon, PlusIcon, SparklesIcon, SpeakerphoneIcon, VideoCameraIcon, UserIcon} from '@heroicons/react/outline'
 import { signIn, signOut, useSession } from 'next-auth/react'
 
+// Header component
 
 function Header() {
     const {data: session } = useSession();

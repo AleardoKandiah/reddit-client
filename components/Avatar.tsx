@@ -8,7 +8,7 @@ function Avatar() {
 
 
   return (
-    <div className='relative'>
+    <div className='relative h-10 w-10 rounded-full border-gray-300 bg-white'>
       <Image 
       layout='fill'
       src={`https://avatars.decebear.com/api/open-peeps/$

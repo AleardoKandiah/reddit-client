@@ -6,8 +6,10 @@ function Avatar() {
 
 
   return (
-    <div>Avatar</div>
-  )
+    <div>
+      <Image src={`https://avatars.decebear.com/api/open-peeps/${session?.user.name}`}/>
+    </div>
+    )
 }
 
 export default Avatar

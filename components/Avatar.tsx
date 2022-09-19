@@ -9,7 +9,9 @@ function Avatar() {
 
   return (
     <div>
-      <Image src={`https://avatars.decebear.com/api/open-peeps/$
+      <Image 
+      layout='fill'
+      src={`https://avatars.decebear.com/api/open-peeps/$
       {session?.user?.name || 'placeholder'
     }`}/>
     </div>

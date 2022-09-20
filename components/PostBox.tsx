@@ -2,10 +2,18 @@ import { useSession } from 'next-auth/react'
 import React from 'react'
 import Avatar from './Avatar'
 import { LinkIcon, PhotographIcon } from '@heroicons/react/outline'
-
+import { useForm } from 'react-hook-form'
 
 function PostBox() {
     const { data: session} = useSession()
+    const {
+      register,
+      setValue,
+      handleSubmit,
+      watch,
+      formState: { errors },
+    } = useForm<FormData>()
+
 
   return (
     <form className='sticky top-16 z-50 bg-white border rounded-md border-gray-300 p-2'>

@@ -9,7 +9,7 @@ function PostBox() {
     <form>
         <div className='flex items-center space-x-3'>
            {/* Avatar */}
-           <Avatar />
+           <Avatar seed='Al' />
 
             <input
             disabled={!session}

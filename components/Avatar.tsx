@@ -3,7 +3,13 @@ import React from 'react'
 import Image from 'next/image'
 
 
-function Avatar() {
+type Props = {
+  seed?: string
+  large?: boolean
+}
+
+
+function Avatar( {seed, large} : Props) {
     const { data: session} = useSession()
 
 
@@ -12,8 +18,8 @@ function Avatar() {
       <Image 
       layout='fill'
       src={`https://avatars.decebear.com/api/open-peeps/$
-      {session?.user?.name || 'placeholder'
-    }`}/>
+      { seed || session?.user?.name || 'placeholder'
+    }.svg`}/>
     </div>
     )
 }

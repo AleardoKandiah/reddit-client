@@ -6,7 +6,7 @@ function PostBox() {
     const { data: session} = useSession()
 
   return (
-    <form>
+    <form className='sticky top-16 z-50 bg-white border rounded-md border-gray-300'>
         <div className='flex items-center space-x-3'>
            {/* Avatar */}
            <Avatar seed='Al' />

@@ -31,8 +31,17 @@ function PostBox() {
 
             <PhotographIcon className={` cursor-pointer h-6 text-gray-300`}/>
             <LinkIcon className='h-6 text-gray-300'/>
-
         </div>
+            {!!watch('postTiles') && (
+              <div>
+                {/*Body */}
+                <div>
+                  <p>Body</p>
+                  <input type="text" placeholder='Text (optional0'/>
+                </div>
+              </div>
+            )}
+
     </form>
   )
 }

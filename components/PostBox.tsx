@@ -35,8 +35,8 @@ function PostBox() {
             {!!watch('postTiles') && (
               <div>
                 {/*Body */}
-                <div>
-                  <p>Body</p>
+                <div className='flex items-center px-2 '>
+                  <p className=''>Body</p>
                   <input
                   className='m-2 flex-1 bg-blue-50 p-2 outline-none'
                   {...register('postBody')}

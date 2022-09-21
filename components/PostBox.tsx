@@ -37,7 +37,11 @@ function PostBox() {
                 {/*Body */}
                 <div>
                   <p>Body</p>
-                  <input type="text" placeholder='Text (optional0'/>
+                  <input
+                  className='m-2 flex-1 bg-blue-50 p-2 outline-none'
+                  {...register('postBody')}
+                   type="text"
+                    placeholder='Text (optional)'/>
                 </div>
               </div>
             )}

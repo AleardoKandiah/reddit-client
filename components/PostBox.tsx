@@ -1,11 +1,12 @@
 import { useSession } from 'next-auth/react'
-import React from 'react'
+import React, { useState } from 'react'
 import Avatar from './Avatar'
 import { LinkIcon, PhotographIcon } from '@heroicons/react/outline'
 import { useForm } from 'react-hook-form'
 
 function PostBox() {
     const { data: session} = useSession()
+    const [ imageBoxOpen, setImageBoxOpen] = useState<boolean>(false)
     const {
       register,
       setValue,

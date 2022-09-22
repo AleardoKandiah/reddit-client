@@ -33,7 +33,7 @@ function PostBox() {
             <LinkIcon className='h-6 text-gray-300'/>
         </div>
             {!!watch('postTiles') && (
-              <div>
+              <div className='flex flex-col'>
                 {/*Body */}
                 <div className='flex items-center px-2 '>
                   <p className='min-w-[90px]'>Body</p>

@@ -30,7 +30,8 @@ function PostBox() {
             
             }/>
 
-            <PhotographIcon onClick={()=> setImageBoxOpen(!imageBoxOpen)} className={` cursor-pointer h-6 text-gray-300`}/>
+            <PhotographIcon onClick={()=> setImageBoxOpen(!imageBoxOpen)}
+             className={` cursor-pointer h-6 text-gray-300 ${imageBoxOpen && 'text-blue-300'}`}/>
             <LinkIcon className='h-6 text-gray-300'/>
         </div>
             {!!watch('postTiles') && (

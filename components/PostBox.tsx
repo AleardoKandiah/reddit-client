@@ -54,7 +54,7 @@ function PostBox() {
                   className='m-2 flex-1 bg-blue-50 p-2 outline-none'
                   {...register('subreddit')}
                    type="text"
-                    placeholder='Text (optional)'
+                    placeholder='i.e reactjs'
                     />              
                   </div>
              

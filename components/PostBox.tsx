@@ -53,7 +53,7 @@ function PostBox() {
                   <p className='min-w-[90px]'>Subreddit:</p>
                   <input
                   className='m-2 flex-1 bg-blue-50 p-2 outline-none'
-                  {...register('subreddit')}
+                  {...register('subreddit', {required: true})}
                    type="text"
                     placeholder='i.e. reactjs'
                     />              
@@ -76,10 +76,14 @@ function PostBox() {
 
                   {/* Errors */}
                   {Object.keys(errors).length > 0 && (
-                    <div>
+                    <div className='space-y-2'>
                       {errors.postTitle?.type === 'require' && (
                         <p>- A post Title is required</p>
                       )}
+
+                      {errors.subreddit?.type === 'require' && (
+                        <p>- A post Title is required</p>
+                      )}                                  
                     </div>
                   )}
                  </div>

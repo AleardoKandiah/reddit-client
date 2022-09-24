@@ -68,7 +68,7 @@ function PostBox() {
                     className='m-2 flex-1 bg-blue-50 p-2 outline-none'
                     {...register('postImage')}
                       type="text"
-                      placeholder='i.e. reactjs'
+                      placeholder='Optional'
                       />              
                     </div>
                 )}

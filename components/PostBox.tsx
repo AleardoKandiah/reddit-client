@@ -63,7 +63,7 @@ function PostBox() {
 
                 {imageBoxOpening && (
                   <div className='flex items-center px-2 '>
-                    <p className='min-w-[90px]'>Subreddit:</p>
+                    <p className='min-w-[90px]'>Image URL:</p>
                     <input
                     className='m-2 flex-1 bg-blue-50 p-2 outline-none'
                     {...register('postImage')}

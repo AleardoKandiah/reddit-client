@@ -72,6 +72,16 @@ function PostBox() {
                       />              
                     </div>
                 )}
+
+
+                  {/* Errors */}
+                  {Object.keys(errors).length > 0 && (
+                    <div>
+                      {errors.postTitle?.type === 'require' && (
+                        <p>- A post Title is required</p>
+                      )}
+                    </div>
+                  )}
                  </div>
             )}
 

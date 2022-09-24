@@ -66,7 +66,7 @@ function PostBox() {
                     <p className='min-w-[90px]'>Subreddit:</p>
                     <input
                     className='m-2 flex-1 bg-blue-50 p-2 outline-none'
-                    {...register('subreddit')}
+                    {...register('postImage')}
                       type="text"
                       placeholder='i.e. reactjs'
                       />              

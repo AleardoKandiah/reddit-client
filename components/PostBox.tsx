@@ -49,7 +49,7 @@ function PostBox() {
 
 
                 <div className='flex flex-col py-2'>
-                {/*Body */}
+                {/*Subreddit */}
                 <div className='flex items-center px-2 '>
                   <p className='min-w-[90px]'>Subreddit:</p>
                   <input

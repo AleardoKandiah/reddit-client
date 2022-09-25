@@ -60,7 +60,7 @@ function PostBox() {
                   </div>
              
 
-                {/* Image embed */}
+                {/* Image embed*/}
                 {imageBoxOpening && (
                   <div className='flex items-center px-2 '>
                     <p className='min-w-[90px]'>Image URL:</p>

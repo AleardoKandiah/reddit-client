@@ -60,7 +60,7 @@ function PostBox() {
                   </div>
              
 
-                {/* Image embe */}
+                {/* Image embed */}
                 {imageBoxOpening && (
                   <div className='flex items-center px-2 '>
                     <p className='min-w-[90px]'>Image URL:</p>
@@ -74,7 +74,7 @@ function PostBox() {
                 )}
 
 
-                  {/* Errors */}
+                  {/* Error */}
                   {Object.keys(errors).length > 0 && (
                     <div className='space-y-2 p-2 text-red'>
                       {errors.postTitle?.type === 'require' && (

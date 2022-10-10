@@ -36,7 +36,7 @@ function PostBox() {
         </div>
             {!!watch('postTiles') && (
               <div className='flex flex-col py-2'>
-                {/*Body */}
+                {/* Body */}
                 <div className='flex items-center px-2 '>
                   <p className='min-w-[90px]'>Body:</p>
                   <input
@@ -48,7 +48,7 @@ function PostBox() {
                 </div>
 
 
-                {/*Subreddit */}
+                {/* Subreddit */}
                 <div className='flex items-center px-2 '>
                   <p className='min-w-[90px]'>Subreddit:</p>
                   <input
@@ -74,7 +74,7 @@ function PostBox() {
                 )}
 
 
-                  {/* Errors */}
+                  {/* Errors*/}
                   {Object.keys(errors).length > 0 && (
                     <div className='space-y-2 p-2 text-red'>
                       {errors.postTitle?.type === 'require' && (
